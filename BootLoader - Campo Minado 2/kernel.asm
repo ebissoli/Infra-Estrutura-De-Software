@@ -52,10 +52,9 @@ data:
 
     ;Strings para os Creditos
     stringCreditsTitle db 'CREDITOS',0
-    stringCredits1 db '<EDNELSON LUAN>',0
+    stringCredits1 db '<MATHEUS LAFAYETTE>',0
     stringCredits2 db '<ENZO BISSOLI>',0
-    stringCredits3 db '<RODRIGO DUARTE>',0
-    stringCredits4 db '<VINICIUS VENTURA>',0
+    stringCredits3 db '<LUCAS MONTERAZO>',0
 
     stringEsc   db 'Press ESC to return...',0
 
@@ -472,11 +471,6 @@ creditsScreen:
 	mov dh, 18
 	mov dl, 32
     mov si, stringCredits3
-    call stringPlace
-
-	mov dh, 19
-	mov dl, 32
-    mov si, stringCredits4
     call stringPlace
 
 	mov dh, 29
